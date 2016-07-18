@@ -27,8 +27,15 @@ var barrels = [
     // App specific barrels.
     'app',
     'app/shared',
-    'app/header',
+    'app/shared/nav',
+    'app/shared/nav/header',
+    'app/shared/nav/search-box',
     'app/search-box',
+    'app/videos',
+    'app/videos/video-detail',
+    'app/videos/video-list',
+    'app/videos/video-list-item',
+    'app/videos/shared'
 ];
 var cliSystemConfigPackages = {};
 barrels.forEach(function (barrelName) {
