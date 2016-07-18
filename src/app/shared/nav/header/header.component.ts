@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SearchBoxComponent } from '../search-box'
+import { SearchBoxComponent } from '../search-box/search-box.component'
 
 @Component({
   moduleId: module.id,
