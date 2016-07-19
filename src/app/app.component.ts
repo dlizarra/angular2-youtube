@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { HeaderComponent } from './shared/nav';
-import { VideosComponent } from './videos'
+import {Component, ViewEncapsulation} from "@angular/core";
+import {HeaderComponent} from "./shared/nav";
+import {VideosComponent} from "./videos";
+
 
 
 @Component({
@@ -8,6 +9,7 @@ import { VideosComponent } from './videos'
   selector: 'dl-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
+  encapsulation: ViewEncapsulation.None,
   directives: [HeaderComponent, VideosComponent]
 
 })

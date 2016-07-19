@@ -1,12 +1,17 @@
 <div>
   <form role="search">
-    <div class="col-xs-8 col-xs-offset-1">
+    <div class="col-xs-8 col-xs-offset-1 pull-xs-right">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search...">
+        <input type="text"
+               class="form-control"
+               placeholder="Search...">
         <span class="input-group-btn">
-          <button class="btn btn-secondary-outline"><span class="fa fa-search"></span></button>
+          <button type="submit"
+                  class="btn btn-secondary-outline"
+                  (click)="onClick()">
+            <span class="fa fa-search"></span>
+          </button>
         </span>
-
       </div>
     </div>
   </form>

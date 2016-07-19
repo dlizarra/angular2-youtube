@@ -9,5 +9,8 @@ import { Component } from "@angular/core";
 export class SearchBoxComponent{
 
   constructor() {}
+  onClick() {
+    alert('This will do a GET to youtube');
+  }
 
 }

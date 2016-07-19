@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from "@angular/core";
+import {Video} from '../shared';
 
 @Component({
   moduleId: module.id,
@@ -6,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'video-list-item.component.html',
   styleUrls: ['video-list-item.component.css']
 })
-export class VideoListItemComponent implements OnInit {
+export class VideoListItemComponent {
+  @Input() video: Video;
 
   constructor() {}
-
-  ngOnInit() {
-  }
 
 }
