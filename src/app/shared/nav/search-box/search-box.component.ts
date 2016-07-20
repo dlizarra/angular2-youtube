@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import {Component} from "@angular/core";
+import {VideoService} from "../../../videos/shared/video.service";
 
 @Component({
   moduleId: module.id,
@@ -8,9 +9,10 @@ import { Component } from "@angular/core";
 })
 export class SearchBoxComponent{
 
-  constructor() {}
-  onClick() {
-    alert('This will do a GET to youtube');
+  constructor(private videoService: VideoService) {}
+
+  onClick(query: string) {
+    this.videoService.fetchVideos(query);
   }
 
 }
