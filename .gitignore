@@ -23,6 +23,8 @@
 npm-debug.log
 testem.log
 /typings
+/src/app/lib
+
 
 # e2e
 /e2e/*.js
@@ -31,3 +33,4 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+
