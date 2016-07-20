@@ -1,6 +1,6 @@
 <div class="row">
   <ul class="list-group">
-    <li class="list-group-item" *ngFor="let v of videoService.videos">
+    <li class="list-group-item" *ngFor="let v of appState.videoList">
       <dl-video-list-item [video]="v"></dl-video-list-item>
     </li>
   </ul>

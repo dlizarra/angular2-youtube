@@ -1,7 +1,6 @@
 import {Component} from "@angular/core";
 import {VideoListItemComponent} from "../video-list-item";
-import {Video} from "../shared/video.model";
-import {VideoService} from "../shared/video.service"
+import {AppState} from "../../shared/app-state.service";
 
 @Component({
   moduleId: module.id,
@@ -12,6 +11,6 @@ import {VideoService} from "../shared/video.service"
 })
 export class VideoListComponent {
 
-  constructor(private videoService: VideoService) {}
+  constructor(private appState: AppState) {}
 
 }

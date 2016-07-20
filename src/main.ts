@@ -4,6 +4,7 @@ import { disableDeprecatedForms, provideForms } from '@angular/forms';
 import { AppComponent, environment } from './app/';
 import {HTTP_PROVIDERS} from "@angular/http";
 import {VideoService} from "./app/videos/shared/video.service";
+import {AppState} from "./app/shared/app-state.service";
 
 if (environment.production) {
   enableProdMode();
@@ -14,6 +15,7 @@ bootstrap(AppComponent, [
   disableDeprecatedForms(),
   provideForms(),
   HTTP_PROVIDERS,
+  AppState,
   VideoService
 ]);
 

@@ -1,3 +1,20 @@
-<p>
-{{video.title}}
-</p>
+<div class="row">
+  <div class="col-xs-4">
+    <a href="#"><img src="{{video.thumbnailUrl}}" class="img-fluid"></a>
+  </div>
+  <div class="col-xs-8">
+    <div class="row title"><a href="#">{{video.title}}</a></div>
+    <div class="row channel">
+      <a href="http://youtube.com/channel/{{video.channelId}}" target="_blank">
+        {{video.channelTitle}}
+      </a>
+    </div>
+    <div class="row date">
+      {{video.publishedAt}}
+    </div>
+    <div class="row description">
+      {{video.description}}
+    </div>
+  </div>
+</div>
+
