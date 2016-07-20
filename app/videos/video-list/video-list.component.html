@@ -1,7 +1,7 @@
 <div class="row">
   <ul class="list-group">
-    <li class="list-group-item">
-      <dl-video-list-item [video]="mockedVideo"></dl-video-list-item>
+    <li class="list-group-item" *ngFor="let v of videoService.videos">
+      <dl-video-list-item [video]="v"></dl-video-list-item>
     </li>
   </ul>
 </div>

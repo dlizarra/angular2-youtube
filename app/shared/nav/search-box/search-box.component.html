@@ -4,11 +4,12 @@
       <div class="input-group">
         <input type="text"
                class="form-control"
-               placeholder="Search...">
+               placeholder="Search..."
+               #textBox>
         <span class="input-group-btn">
           <button type="submit"
                   class="btn btn-secondary-outline"
-                  (click)="onClick()">
+                  (click)="onClick(textBox.value)">
             <span class="fa fa-search"></span>
           </button>
         </span>
