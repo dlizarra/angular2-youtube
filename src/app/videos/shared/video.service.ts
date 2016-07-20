@@ -13,19 +13,23 @@ export class VideoService {
 
   constructor(private http: Http, private appState: AppState) {}
 
-  fetchVideos(query: String){
+  fetchVideos(query: string) {
     this.http
-      .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&key=AIzaSyAARhzDEdAwaIYKelgTmVa8Nez5sLKjBcM`)
+      .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}`+
+          '&maxResults=25' +
+          '&key=AIzaSyAARhzDEdAwaIYKelgTmVa8Nez5sLKjBcM')
       .map(response => response.json())
-      .subscribe(data => this.appState.videoList = data.items.map(item => {
-        return new Video(
-          item.id.videoId,
-          item.snippet.title,
-          item.snippet.thumbnails.high.url,
-          item.snippet.channelTitle,
-          item.snippet.channelId,
-          moment(item.snippet.publishedAt).fromNow(),
-          item.snippet.description)
-      }))
+      .subscribe(data => {
+        this.appState.videoList = data.items.map(item => {
+          return new Video(
+            item.id.videoId,
+            item.snippet.title,
+            item.snippet.thumbnails.high.url,
+            item.snippet.channelTitle,
+            item.snippet.channelId,
+            moment(item.snippet.publishedAt).fromNow(),
+            item.snippet.description)
+        });
+      })
   }
 }
