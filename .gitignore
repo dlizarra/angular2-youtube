@@ -23,7 +23,6 @@
 npm-debug.log
 testem.log
 /typings
-/public/assets/idea-autocomplete
 
 
 # e2e
