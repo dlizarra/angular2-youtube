@@ -23,7 +23,7 @@
 npm-debug.log
 testem.log
 /typings
-
+/lib
 
 
 # e2e
