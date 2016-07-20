@@ -7,7 +7,11 @@
 /** Map relative paths to URLs. */
 var map = {};
 /** User packages configuration. */
-var packages = {};
+var packages = {
+    'moment': {
+        format: 'cjs'
+    }
+};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -46,7 +50,8 @@ System.config({
     map: {
         '@angular': 'vendor/@angular',
         'rxjs': 'vendor/rxjs',
-        'main': 'main.js'
+        'main': 'main.js',
+        'moment': 'vendor/moment/moment.js'
     },
     packages: cliSystemConfigPackages
 });
