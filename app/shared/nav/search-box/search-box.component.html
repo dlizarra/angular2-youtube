@@ -1,0 +1,19 @@
+<div>
+  <form role="search">
+    <div class="col-xs-8 col-xs-offset-1 pull-xs-right">
+      <div class="input-group">
+        <input type="text"
+               class="form-control"
+               placeholder="Search..."
+               #textBox>
+        <span class="input-group-btn">
+          <button type="submit"
+                  class="btn btn-secondary-outline"
+                  (click)="onClick(textBox.value)">
+            <span class="fa fa-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+  </form>
+</div>
