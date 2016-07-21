@@ -13,9 +13,8 @@ const packages:any = {
     'moment': {
         format: 'cjs'
     },
-    'ng2-pagination': {
-        format: 'register',
-        defaultExtension: 'js'
+    'ng2-pagination':{
+        format: 'cjs'
     }
 };
 
@@ -36,6 +35,7 @@ const barrels:string[] = [
 
     // Thirdparty barrels.
     'rxjs',
+    'ng2-pagination',
 
     // App specific barrels.
     'app',
@@ -67,7 +67,7 @@ System.config({
         'rxjs': 'vendor/rxjs',
         'main': 'main.js',
         'moment': 'vendor/moment/moment.js',
-        'ng2-pagination': 'vendor/ng2-pagination/dist/ng2-pagination-bundle.js'
+        'ng2-pagination': 'vendor/ng2-pagination'
     },
     packages: cliSystemConfigPackages
 });
