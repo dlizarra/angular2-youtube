@@ -10,6 +10,9 @@ var map = {};
 var packages = {
     'moment': {
         format: 'cjs'
+    },
+    'ng2-pagination': {
+        format: 'cjs'
     }
 };
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -51,7 +54,8 @@ System.config({
         '@angular': 'vendor/@angular',
         'rxjs': 'vendor/rxjs',
         'main': 'main.js',
-        'moment': 'vendor/moment/moment.js'
+        'moment': 'vendor/moment/moment.js',
+        'ng2-pagination': 'vendor/ng2-pagination'
     },
     packages: cliSystemConfigPackages
 });

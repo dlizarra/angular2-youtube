@@ -16,7 +16,7 @@ export class VideoService {
   fetchVideos(query: string) {
     this.http
       .get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}`+
-          '&maxResults=25' +
+          '&maxResults=50' +
           '&key=AIzaSyAARhzDEdAwaIYKelgTmVa8Nez5sLKjBcM')
       .map(response => response.json())
       .subscribe(data => {

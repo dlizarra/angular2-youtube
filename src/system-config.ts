@@ -12,6 +12,9 @@ const map:any = {};
 const packages:any = {
     'moment': {
         format: 'cjs'
+    },
+    'ng2-pagination': {
+        format: 'register'
     }
 };
 
@@ -62,7 +65,8 @@ System.config({
         '@angular': 'vendor/@angular',
         'rxjs': 'vendor/rxjs',
         'main': 'main.js',
-        'moment': 'vendor/moment/moment.js'
+        'moment': 'vendor/moment/moment.js',
+        'ng2-pagination': 'vendor/ng2-pagination/dist/ng2-pagination-bundle.js'
     },
     packages: cliSystemConfigPackages
 });
