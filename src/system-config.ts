@@ -14,7 +14,8 @@ const packages:any = {
         format: 'cjs'
     },
     'ng2-pagination': {
-        format: 'register'
+        format: 'register',
+        defaultExtension: 'js'
     }
 };
 
