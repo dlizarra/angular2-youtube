@@ -17,7 +17,7 @@ module.exports = function(defaults) {
       'rxjs/**/*.+(js|js.map)',
       '@angular/**/*.+(js|js.map)',
       'moment/moment.js',
-      'ng2-pagination/dist/**/*.+(js|js.map)'
+      'ng2-pagination//**/*.+(js|js.map)'
     ]
   });
 };
