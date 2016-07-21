@@ -3,16 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Angular2Youtube</title>
-  <base href="/">
+  <base href="/angular2-youtube/">
 
-  {{#unless environment.production}}
-  <script src="/ember-cli-live-reload.js" type="text/javascript"></script>
-  {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-
-
-
 
   <!-- Polymer -->
   <script src="app/shared/web-components/webcomponentsjs/webcomponents-lite.min.js"></script>
@@ -23,15 +17,15 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 
-
 </head>
 <body>
 <dl-root>Loading...</dl-root>
 
 
-{{#each scripts.polyfills}}
-<script src="{{.}}"></script>
-{{/each}}
+<script src="vendor/es6-shim/es6-shim.js"></script>
+<script src="vendor/reflect-metadata/Reflect.js"></script>
+<script src="vendor/systemjs/dist/system.src.js"></script>
+<script src="vendor/zone.js/dist/zone.js"></script>
 <script>
   System.import('system-config.js').then(function () {
     System.import('main');
