@@ -1,0 +1,35 @@
+<div class="row">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let v of appState.videoList | paginate: {itemsPerPage: 5, currentPage: p}">
+      <dl-video-list-item [video]="v"></dl-video-list-item>
+    </li>
+  </ul>
+</div>
+<div *ngIf="appState.videoList.length > 0" class="pagination-centered">
+  <pagination-controls #api (pageChange)="p = $event">
+    <nav>
+      <ul class="pagination">
+        <li class="page-item" [class.disabled]="api.isFirstPage()">
+          <a class="page-link"aria-label="Previous" (click)="api.previous()">
+            <span aria-hidden="true" class="fa fa-arrow-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item" *ngFor="let page of api.pages" [class.active]="api.getCurrent() === page.value">
+          <a class="page-link" (click)="api.setCurrent(page.value)" >
+            <span>{{ page.label }}</span>
+          </a>
+        </li>
+        <li class="page-item" [class.disabled]="api.isLastPage()">
+          <a class="page-link" aria-label="Next" (click)="!api.isLastPage() && api.next()">
+            <span aria-hidden="true" class="fa fa-arrow-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </pagination-controls>
+</div>
+
+
+

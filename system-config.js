@@ -31,6 +31,7 @@ var barrels = [
     '@angular/platform-browser-dynamic',
     // Thirdparty barrels.
     'rxjs',
+    'ng2-pagination',
     // App specific barrels.
     'app',
     'app/shared',
