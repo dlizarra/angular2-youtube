@@ -1,0 +1,12 @@
+.form-group {
+    display: inline;
+}
+
+.input-group-addon {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.fa-search {
+    color: #fff;
+}
