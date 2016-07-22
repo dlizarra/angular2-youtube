@@ -1,6 +1,6 @@
 <div class="row">
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let v of appState.videoList | paginate: {itemsPerPage: 5, currentPage: p}">
+  <ul class="list-group border">
+    <li class="list-group-item" [class.playing] = "v === appState.activeVideo" *ngFor="let v of appState.videoList | paginate: {itemsPerPage: 5, currentPage: p}">
       <dl-video-list-item [video]="v"></dl-video-list-item>
     </li>
   </ul>
