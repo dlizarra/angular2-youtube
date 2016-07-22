@@ -14,7 +14,7 @@ export class SearchBoxComponent{
 
   constructor(private videoService: VideoService, private appState: AppState) {}
 
-  onClick(query: string) {
+  search(query: string) {
     this.videoService.fetchVideos(query)
       .subscribe(data => {
         this.appState.videoList = data.items.map(item => {

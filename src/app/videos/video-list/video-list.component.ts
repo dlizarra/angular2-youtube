@@ -24,7 +24,7 @@ export class VideoListComponent implements OnInit {
 
 
   ngOnInit() {
-    this.videoService.fetchVideos('')
+    this.videoService.fetchVideos('typescript')
       .subscribe(data => {
         this.appState.videoList = data.items.map(item => {
           return new Video(
