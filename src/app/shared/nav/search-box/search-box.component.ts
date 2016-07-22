@@ -1,5 +1,8 @@
 import {Component} from "@angular/core";
 import {VideoService} from "../../../videos/shared/video.service";
+import {AppState} from "../../app-state.service";
+import * as moment from 'moment';
+import {Video} from "../../../videos/shared/video.model";
 
 @Component({
   moduleId: module.id,
@@ -9,10 +12,22 @@ import {VideoService} from "../../../videos/shared/video.service";
 })
 export class SearchBoxComponent{
 
-  constructor(private videoService: VideoService) {}
+  constructor(private videoService: VideoService, private appState: AppState) {}
 
   onClick(query: string) {
-    this.videoService.fetchVideos(query);
+    this.videoService.fetchVideos(query)
+      .subscribe(data => {
+        this.appState.videoList = data.items.map(item => {
+          return new Video(
+            item.id.videoId,
+            item.snippet.title,
+            item.snippet.thumbnails.high.url,
+            item.snippet.channelTitle,
+            item.snippet.channelId,
+            moment(item.snippet.publishedAt).fromNow(),
+            item.snippet.description)
+        });
+      });
   }
 
 }

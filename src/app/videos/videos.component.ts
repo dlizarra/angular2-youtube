@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { VideoListComponent } from './video-list'
 import { VideoDetailComponent } from './video-detail'
 
@@ -9,11 +9,9 @@ import { VideoDetailComponent } from './video-detail'
   styleUrls: ['videos.component.css'],
   directives: [VideoListComponent, VideoDetailComponent]
 })
-export class VideosComponent implements OnInit {
-
+export class VideosComponent {
   constructor() {}
 
-  ngOnInit() {
-  }
+
 
 }

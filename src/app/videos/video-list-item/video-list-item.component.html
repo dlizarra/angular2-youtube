@@ -3,7 +3,7 @@
     <a href="#"><img src="{{video.thumbnailUrl}}" class="img-fluid"></a>
   </div>
   <div class="col-xs-8">
-    <div class="row title"><a href="#">{{video.title}}</a></div>
+    <div class="row title"><a href="#" (click)="onClick()">{{video.title}}</a></div>
     <div class="row channel">
       <a href="http://youtube.com/channel/{{video.channelId}}" target="_blank">
         {{video.channelTitle}}

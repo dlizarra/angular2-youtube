@@ -14,5 +14,5 @@ import {VideosComponent} from "./videos";
 
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Youtube Search';
 }

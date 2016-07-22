@@ -49,7 +49,7 @@ const barrels:string[] = [
     'app/videos/video-list',
     'app/videos/video-list-item',
     'app/videos/shared'
-    /** @cli-barrel */
+  /** @cli-barrel */
 ];
 
 const cliSystemConfigPackages:any = {};

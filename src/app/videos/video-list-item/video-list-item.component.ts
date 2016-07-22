@@ -1,5 +1,6 @@
 import {Component, Input} from "@angular/core";
-import {Video} from '../shared';
+import {Video} from "../shared";
+import {AppState} from "../../shared/app-state.service";
 
 @Component({
   moduleId: module.id,
@@ -10,6 +11,10 @@ import {Video} from '../shared';
 export class VideoListItemComponent {
   @Input() video: Video;
 
-  constructor() {}
+  constructor(private appState: AppState) {}
+
+  onClick(){
+    this.appState.activeVideo = this.video;
+  }
 
 }
