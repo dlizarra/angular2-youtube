@@ -10,18 +10,18 @@
     <nav>
       <ul class="pagination">
         <li class="page-item" [class.disabled]="api.isFirstPage()">
-          <a class="page-link"aria-label="Previous" (click)="api.previous()">
+          <a class="page-link" href="#" aria-label="Previous" (click)="api.previous()">
             <span aria-hidden="true" class="fa fa-arrow-left"></span>
             <span class="sr-only">Previous</span>
           </a>
         </li>
         <li class="page-item" *ngFor="let page of api.pages" [class.active]="api.getCurrent() === page.value">
-          <a class="page-link" (click)="api.setCurrent(page.value)" >
+          <a class="page-link" href="#" (click)="api.setCurrent(page.value)" >
             <span>{{ page.label }}</span>
           </a>
         </li>
         <li class="page-item" [class.disabled]="api.isLastPage()">
-          <a class="page-link" aria-label="Next" (click)="!api.isLastPage() && api.next()">
+          <a class="page-link" href="#" aria-label="Next" (click)="!api.isLastPage() && api.next()">
             <span aria-hidden="true" class="fa fa-arrow-right"></span>
             <span class="sr-only">Next</span>
           </a>
