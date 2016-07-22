@@ -1,1 +1,8 @@
-nav { background-color: #cc181e }
+nav {
+    background-color: #cc181e
+}
+
+.navbar-brand > img {
+    height: 32px;
+}
+
