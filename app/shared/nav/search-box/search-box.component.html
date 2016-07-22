@@ -5,11 +5,12 @@
         <input type="text"
                class="form-control"
                placeholder="Search..."
+               (keyup)="search(textBox.value)"
                #textBox>
         <span class="input-group-btn">
           <button type="submit"
                   class="btn btn-secondary-outline"
-                  (click)="onClick(textBox.value)">
+                  (click)="search(textBox.value)">
             <span class="fa fa-search"></span>
           </button>
         </span>
