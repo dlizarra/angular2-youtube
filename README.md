@@ -24,3 +24,6 @@ Navigate to `http://localhost:4200`.
 - [ng2-pagination](http://michaelbromley.github.io/ng2-pagination/)
 - [Moment.js](http://momentjs.com/)
 
+## Screenshot
+
+<img src=public/assets/screenshot.png width=800>
