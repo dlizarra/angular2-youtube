@@ -1,6 +1,6 @@
 # Angular 2 YouTube
 
-> Youtube sample app built with Angular 2.
+> Small Youtube sample app built with Angular 2.
 
 [Demo](http://dlizarra.github.io/angular2-youtube)
 
