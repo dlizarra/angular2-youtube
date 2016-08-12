@@ -6,8 +6,7 @@ import { VideoDetailComponent } from './video-detail'
   moduleId: module.id,
   selector: 'dl-videos',
   templateUrl: 'videos.component.html',
-  styleUrls: ['videos.component.css'],
-  directives: [VideoListComponent, VideoDetailComponent]
+  styleUrls: ['videos.component.css']
 })
 export class VideosComponent {
   constructor() {}

@@ -1,6 +1,5 @@
-import {Injectable} from "@angular/core";
-import {Video} from "../videos/shared/video.model";
-import {SafeResourceUrl} from "@angular/platform-browser";
+import { Injectable } from "@angular/core";
+import { Video } from "../videos/shared/video.model";
 
 
 @Injectable()
