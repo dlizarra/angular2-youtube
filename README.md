@@ -1,6 +1,6 @@
 # Angular 2 YouTube
-[![David](https://img.shields.io/david/dlizarra/angular2-youtube.svg)]()
-[![David](https://img.shields.io/david/dev/dlizarra/angular2-youtube.svg)]()
+[![Dependencies][dependencies]][dependencies-url]
+[![Dev Dependencies][dev-dependencies]][dev-dependencies-url]
 
 > Small Youtube sample app built with Angular 2.
 
@@ -37,3 +37,8 @@
 ## Screenshot
 
 <img src=src/assets/screenshot.png width=800>
+
+[dependencies]: https://david-dm.org/dlizarra/angular2-youtube.svg
+[dependencies-url]: https://david-dm.org/dlizarra/angular2-youtube
+[dev-dependencies]: https://david-dm.org/dlizarra/angular2-youtube/dev-status.svg
+[dev-dependencies-url]: https://david-dm.org/dlizarra/angular2-youtube?type=dev
