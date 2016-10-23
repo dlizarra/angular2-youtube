@@ -1,11 +1,13 @@
 # Angular 2 YouTube
+[![David](https://img.shields.io/david/dlizarra/angular2-youtube.svg)]()
+[![David](https://img.shields.io/david/dev/dlizarra/angular2-youtube.svg)]()
 
 > Small Youtube sample app built with Angular 2.
 
 [Demo](http://dlizarra.github.io/angular2-youtube)
 
 ## Quickstart
-**1- Install or update Angular CLI (Choose option A or B):**
+**1- Install or update Angular CLI (Choose either option A or B):**
 
 *Option A.* You don't have Angular CLI installed globally in your computer:
 
@@ -34,4 +36,4 @@
 
 ## Screenshot
 
-<img src=public/assets/screenshot.png width=800>
+<img src=src/assets/screenshot.png width=800>
