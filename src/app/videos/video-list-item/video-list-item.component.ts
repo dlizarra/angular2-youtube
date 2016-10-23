@@ -3,7 +3,6 @@ import {Video} from "../shared";
 import {AppState} from "../../shared/app-state.service";
 
 @Component({
-  moduleId: module.id,
   selector: 'dl-video-list-item',
   templateUrl: 'video-list-item.component.html',
   styleUrls: ['video-list-item.component.css']

@@ -5,7 +5,6 @@ import * as moment from 'moment';
 import {Video} from "../../../videos/shared/video.model";
 
 @Component({
-  moduleId: module.id,
   selector: 'dl-search-box',
   templateUrl: 'search-box.component.html',
   styleUrls: ['search-box.component.css']

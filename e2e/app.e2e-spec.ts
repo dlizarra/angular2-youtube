@@ -1,14 +1,14 @@
-import { Angular2YoutubePage } from './app.po';
+import { MigrationProjectPage } from './app.po';
 
-describe('angular2-youtube App', function() {
-  let page: Angular2YoutubePage;
+describe('migration-project App', function() {
+  let page: MigrationProjectPage;
 
   beforeEach(() => {
-    page = new Angular2YoutubePage();
+    page = new MigrationProjectPage();
   });
 
   it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('dl works!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
